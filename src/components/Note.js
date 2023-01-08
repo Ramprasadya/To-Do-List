@@ -21,6 +21,10 @@ const Note = (props) => {
 
     const addNote=(event)=>{
         props.onNote(note)
+        setNote({
+            title : "",
+            description : ""
+        })
         event.preventDefault()
     }
 

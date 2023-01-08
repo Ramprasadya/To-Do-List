@@ -12,6 +12,17 @@ function App() {
       return [...prevNotes , newNote ]
      })
   }
+
+  const onDelete=(id)=>{
+    setNotes((prevNotes)=>{
+      
+      return prevNotes.filter((item,index)=>{
+        return index !== id
+      })
+
+    })
+  }
+
   return (
     <>
      <Navbar/>
@@ -19,8 +30,13 @@ function App() {
       onNote={addNote}
      />
      {
-      notes.map((item)=>{
-        return <Card  title={item.title} description = {item.description} />
+      notes.map((item,index)=>{
+        return <Card  
+        key = {index}
+        id = {index}
+        title={item.title} 
+        description = {item.description} 
+         onDelete={onDelete} />
       })
      }
      

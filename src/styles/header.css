@@ -5,6 +5,9 @@
 margin-left: 3rem;
 cursor: pointer;
 }
+.bg-body{
+    background-image: url("../images/shattered-dark.png");
+}
 
 .text:hover{
     color: #68B984;

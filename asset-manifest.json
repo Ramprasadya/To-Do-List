@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/To-Do-List/static/css/main.f98f7823.css",
+    "main.js": "/To-Do-List/static/js/main.4160533e.js",
+    "static/js/787.5e141d9e.chunk.js": "/To-Do-List/static/js/787.5e141d9e.chunk.js",
+    "static/media/shattered-dark.png": "/To-Do-List/static/media/shattered-dark.33dfd44fb35f903edc84.png",
+    "index.html": "/To-Do-List/index.html",
+    "main.f98f7823.css.map": "/To-Do-List/static/css/main.f98f7823.css.map",
+    "main.4160533e.js.map": "/To-Do-List/static/js/main.4160533e.js.map",
+    "787.5e141d9e.chunk.js.map": "/To-Do-List/static/js/787.5e141d9e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f98f7823.css",
+    "static/js/main.4160533e.js"
+  ]
+}

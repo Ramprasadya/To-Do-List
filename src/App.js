@@ -31,12 +31,13 @@ function App() {
      />
      {
       notes.map((item,index)=>{
-        return <Card  
+        return <div className='d-flex'> <Card  
         key = {index}
         id = {index}
         title={item.title} 
         description = {item.description} 
          onDelete={onDelete} />
+          </div>
       })
      }
      

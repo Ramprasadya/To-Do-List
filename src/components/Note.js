@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-
+import "../styles/note.css"
+import AddIcon from '@mui/icons-material/Add';
 const Note = (props) => {
 
     const [note, setNote] = useState({
@@ -31,16 +32,15 @@ const Note = (props) => {
 
   return (
     <div className="container">
+    <label htmlFor="">Add A Note</label>
     <form action="">
     <div class="mb-3">
-    <label htmlFor="exampleFormControlInput1" class="form-label">Title</label>
     <input type="text" onChange={onChange} value={note.title} name="title" class="form-control"  />
   </div>
   <div class="mb-3">
-    <label htmlFor="exampleFormControlTextarea1" class="form-label">Description</label>
     <textarea class="form-control" onChange={onChange} name = "description" value={note.description}  rows="3"/>
   </div>
-  <button type="submit" onClick={addNote} class="btn btn-success">Add Note</button>
+  <button type="submit" onClick={addNote} class="btn btn-success"><AddIcon/></button>
   </form>
   </div>
   )

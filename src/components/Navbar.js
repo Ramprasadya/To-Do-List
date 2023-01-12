@@ -1,10 +1,11 @@
 import React from 'react'
-
+import "../styles/header.css"
+import StarIcon from '@mui/icons-material/Star';
 const Navbar = () => {
   return (
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar bg-body">
     <div class="container-fluid">
-      <span class="navbar-brand mb-0 h1">To-Do</span>
+      <span class="navbar-brand text"><StarIcon/>To-Do</span>
     </div>
   </nav>
   )

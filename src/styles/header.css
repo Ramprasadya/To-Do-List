@@ -1,0 +1,15 @@
+.text{
+    color: #439A97;
+    font-size: larger;
+    font-size: 2rem;
+margin-left: 3rem;
+cursor: pointer;
+}
+
+.text:hover{
+    color: #68B984;
+    cursor: pointer;
+}
+body{
+    background-image: url("../images/shattered-dark.png");
+}

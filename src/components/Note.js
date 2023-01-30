@@ -21,12 +21,18 @@ const Note = (props) => {
     }
 
     const addNote=(event)=>{
-        props.onNote(note)
-        setNote({
-            title : "",
-            description : ""
-        })
-        event.preventDefault()
+        if(note.title.length && note.description.length > 6){
+            props.onNote(note)
+            setNote({
+                title : "",
+                description : ""
+            })
+            event.preventDefault()
+        }else{
+            event.preventDefault()
+        }
+        
+       
     }
 
 
@@ -35,7 +41,7 @@ const Note = (props) => {
     <label htmlFor="">Add A Note</label>
     <form action="">
     <div class="mb-3">
-    <input type="text" onChange={onChange} value={note.title} name="title" class="form-control"  />
+    <input type="text"  onChange={onChange} value={note.title} name="title" class="form-control"  />
   </div>
   <div class="mb-3">
     <textarea class="form-control" onChange={onChange} name = "description" value={note.description}  rows="3"/>
